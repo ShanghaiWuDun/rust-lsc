@@ -1,0 +1,27 @@
+[package]
+name = "lsc"
+version = "0.0.1"
+authors = ["luozijun <luozijun.assistant@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+log = "0.4"
+ssh2 = "0.3"
+
+env_logger = "0.6.0"
+chrono = "0.4"
+ansi_term = "0.11"
+
+
+[[bin]]
+name = "test_thrussh"
+path = "./src/thrussh.rs"
+
+[[bin]]
+name = "lsc"
+path = "./src/bin/lsc.rs"
+
+
+[dev-dependencies]
+
+
